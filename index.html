@@ -47,11 +47,6 @@ const convertSVGtoImg = async e => {
   $img.src = dataURL
   $holder.appendChild($img)
 }
-
-const buttons = [...document.querySelectorAll('[data-format]')]
-for (const $btn of buttons) {
-  $btn.onclick = convertSVGtoImg
-}
         }
     </script>
 <style>
