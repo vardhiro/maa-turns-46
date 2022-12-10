@@ -25,8 +25,7 @@ const loadImage = async url => {
 }
 
 const convertSVGtoImg = async e => {
-  const $btn = e.target
-  const format = $btn.dataset.format ?? 'png'
+  const format = "jpg"
   $label.textContent = format
 
   destroyChildren($holder)
